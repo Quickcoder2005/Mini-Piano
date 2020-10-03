@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--Please increase your volume to the highest and wait for the sounds to load if it does not work-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+    <title> Piano App </title>
+
+<style>
+.piano{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+h2{
+    color: #666699;
+}
+</style>
+</head>
+<body bgcolor=#ffb3b3>
+    <center><h2> Mini Piano </h2></center>
+    <div class="piano">
+    <hr style="color: #cc33ff;">
+    <img class="white" id="c" src="wnote.png" onclick="play(document.querySelector(`#caudio`))" style="position: absolute;top: 30%;left:80px;">
+    <img class="white" i class="white" d="d" src="wnote.png" onclick="play(document.querySelector(`#daudio`))" style="position: absolute;top: 30%;left:120px;">
+    <img class="white" id="e" src="wnote.png" onclick="play(document.querySelector(`#eaudio`))" style="position: absolute;top: 30%;left:160px;">
+    <img class="white" id="f" src="wnote.png" onclick="play(document.querySelector(`#faudio`))" style="position: absolute;top: 30%;left:200px;">
+    <img class="white" id="g" src="wnote.png" onclick="play(document.querySelector(`#gaudio`))" style="position: absolute;top: 30%;left:240px;">
+    <img class="white" id="a" src="wnote.png" onclick="play(document.querySelector(`#aaudio`))" style="position: absolute;top: 30%;left:280px;">
+    <img class="white" id="b" src="wnote.png" onclick="play(document.querySelector(`#baudio`))" style="position: absolute;top: 30%;left:320px;">
+    <img id="cs" src="bnote.png" onclick="play(document.querySelector(`#csaudio`))" style="    position: absolute;top: 30%;left:105px;">
+    <img id="ds" src="bnote.png" onclick="play(document.querySelector(`#dsaudio`))" style="    position: absolute;top: 30%;left:145px;">
+    <img id="fs" src="bnote.png" onclick="play(document.querySelector(`#fsaudio`))" style="    position: absolute;top: 30%;left:225px;">
+    <img id="gs" src="bnote.png" onclick="play(document.querySelector(`#gsaudio`))" style="    position: absolute;top: 30%;left:265px;">
+    <img id="as" src="bnote.png" onclick="play(document.querySelector(`#asaudio`))" style="    position: absolute;top: 30%;left:300px;">
+    </div>
+
+    
+    <audio id="caudio" src="c3">
+    <audio id="csaudio" src="c-3">
+
+    <audio id="daudio" src="d3">
+    <audio id="dsaudio" src="d-3">
+
+
+    <audio id="eaudio" src="e3">
+    <audio id="faudio" src="f3">
+
+
+    <audio id="fsaudio" src="f-3">
+    <audio id="gaudio" src="g3">
+
+    <audio id="gsaudio" src="g-3">
+    <audio id="aaudio" src="a3">
+
+
+    <audio id="asaudio" src="a-3">
+    <audio id="baudio" src="b3">
+
+<script>
+function play(e){
+    e.currentTime = 0;
+    e.play();
+}
+
+</script>
+
+</body>
+</html>
